@@ -1,29 +1,29 @@
-# Notifications
+# Notifications (Overview)
 
-## Summary
+> **This theme has been split into two sub-themes due to scale (22+ learnings):**
+> - **[Mobile Push Notifications](notifications-mobile.md)** — 12 learnings
+> - **[Desktop Web Notifications](notifications-desktop.md)** — 10 learnings
 
-Web notifications are an underexploited channel. 81% of desktop users don't receive them, and only 1.25% of web sessions originate from notifications. But they directly correlate with increased PVs and can bring back logged-out users via login reminders. The team has attacked this from two angles: making notifications more effective (sticky notifications) and expanding the opt-in base (permission upsells).
+## Cross-Platform Summary
 
-## Confidence-Ranked Findings
+Notifications are the single largest growth lever in the portfolio. The top experiments account for **~1M+ measured DAU impact** across mobile and desktop. The notification optimization stack follows a clear hierarchy:
 
-**High Confidence:**
-- Sticky important notifications: +4,300 Desktop DAU, +190.5% notif opens/user (stat sig). Only important notifications are made sticky. [001]
-- Exit intent is the best opt-in moment: +0.58pp vs +0.22-0.53pp for other triggers [016]
+1. **Delivery reliability** (infrastructure) — 170K DAU [032]
+2. **Content relevance** (important filtering, sender identity) — 272K DAU [033, 036]
+3. **Frequency tuning** (cooldown, cadence) — 119K DAU [034]
+4. **Opt-in base growth** (upsells, nudges, onboarding) — 50K+ DAU [042, 046, 047, 048, 053]
+5. **Notification UX** (sticky, actions, rich) — 50K+ DAU [001, 039]
+6. **Re-engagement** (reactivation, logged-out) — 10K+ PVs/day [044]
 
-**Medium Confidence:**
-- The 81% non-opted-in base represents a massive addressable pool [016]
-- Notifications CTR on web is just 0.3% — there's room to improve notification quality/relevance [016]
+## Key Cross-Platform Pattern
 
-## Open Questions
-- What happens when sticky notifications expand to MacOS? (Expected ~2x impact)
-- Can notification content be personalized to improve the 0.3% CTR?
-- What is the impact of the Inbox Refresh Upsell? (Still running as of Sep 2025)
-- For users who opt in to browser notifications but have OS-level permissions disabled — is that a recoverable segment?
+**Android notification experiments GA more reliably than iOS.** Across nudges [046], lapsed returner [047], persistent reminder [048], and actions [039], Android consistently outperforms. However, iOS can deliver larger absolute impact when it works (notification redesign with sender: +106K on iOS [036]). The implication: test on Android first for faster signal, then iterate for iOS.
 
-## Opportunity Areas
-- **MacOS expansion**: Windows-only today; doubling the surface should roughly double the DAU impact [001]
-- **Opt-in scaling**: Combining the best-performing upsell moments across the user journey could systematically grow the opted-in base [016]
-- **Logged-out user re-engagement**: Notifications can bring logged-out users back via login reminders — a unique capability the web has over mobile for dormant desktop users [016]
+## The Upsell Hierarchy (Desktop)
 
-## Related Learnings
-[001, 016, 004]
+Not all opt-in moments are equal:
+1. **Message read** — +0.74% opt-in (highest rate, contextually relevant) [050]
+2. **Exit intent** — +0.35% opt-in (departure moment, low frequency) [045]
+3. **Inbox refresh** — TERMINATED (too frequent, user complaints) [059]
+
+The lesson: upsell effectiveness correlates with contextual relevance and inversely correlates with frequency.

@@ -2,79 +2,116 @@
 
 > This is a living document. It is rebuilt each time a new learning is added.
 > Last updated: 2026-05-13
-> Total learnings incorporated: 29
+> Total learnings incorporated: 64
 
 ## Themes
 
-1. **[IMAP-Out Rescue & Acquisition](imap-out-rescue.md)** — 10 learnings
-2. **[Gamification & Engagement (Streaks/Challenges)](gamification-engagement.md)** — 11 learnings
-3. **[Notifications](notifications.md)** — 3 learnings
-4. **[Desktop vs Mobile Platform Dynamics](platform-dynamics.md)** — 5 learnings
-5. **[Reactivation & Dormant Users](reactivation.md)** — 2 learnings
-6. **[New Users & Activation](new-users.md)** — 1 learning
+1. **[Notifications](notifications.md)** — 22 learnings (split into [Mobile](notifications-mobile.md) + [Desktop](notifications-desktop.md))
+2. **[IMAP-Out Rescue & Acquisition](imap-out-rescue.md)** — 15 learnings
+3. **[Gamification & Engagement (Streaks/Challenges)](gamification-engagement.md)** — 12 learnings
+4. **[Engagement Features (Tidy Inbox, Default Mail, Sharing)](engagement-features.md)** — 7 learnings
+5. **[Reactivation & Dormant Users](reactivation.md)** — 6 learnings
+6. **[Desktop vs Mobile Platform Dynamics](platform-dynamics.md)** — 9 learnings (cross-cutting)
+7. **[New Users & Activation](new-users.md)** — 1 learning
 
 ---
 
 ## Key Findings (Confidence-Ranked)
 
 ### High Confidence
-- **Gamification disproportionately impacts less-active users.** Streaks v1, Challenges, and Streaks v2 all show the same pattern: Occasional and Tourist segments see 3-10x the engagement lift of Fanatics/Loyalists. This is the team's most consistent and replicable finding. [006, 007, 008, 025]
-- **IMAP-Out-Only logout is a proven compounder.** 6% yield with no degradation over time, exceeded 2026 estimates by 50%. The most reliable growth lever the team has. [012, 013]
-- **Creative and UX optimizations in IMAP-Out Rescue compound.** Lottie animations (+5.7% Android), spam-fighting creative (+22%), removing "Maybe Later" (+16%) — together these scaled daily downloads from ~5K to 24K+ over 12 months. [017, 018, 020]
-- **Game mechanics drive exactly what they reward — nothing more.** Challenges only lifted stat sig on the actions that earn points (delete, read, open). Non-rewarded actions didn't move. [025]
-- **Post-challenge/streak behavior persists.** Users don't just revert — O/T users maintain elevated DV7 after streaks end and PV lift persists after challenge windows close. [006, 008]
+
+- **Notifications are the #1 growth lever.** The top 6 notification experiments account for ~1M+ measured DAU impact. The foundational web notifications desktop launch alone delivered +267K DAU [031]. Mobile notification infrastructure optimization: +170K [032]. Important email filtering: +166K [033]. Cooldown tuning: +119K [034]. Sender redesign: +106K [036]. Tidy Inbox 1.5: +96.5K [037]. [031-036, 037]
+
+- **IMAP-Out Rescue is a proven compounding growth engine.** Apple Mail Rescue 1 proved the concept (+55.7K DAU [038]). Creative optimizations compound: Lottie (+5.7%), spam-fighting (+22%), removing "Maybe Later" (+16%) scaled downloads from 5K to 24K+/day. IMAP-Out-Only logout yields 6% sustained [012]. [012, 017, 018, 020, 038, 054]
+
+- **Gamification disproportionately impacts less-active users.** Streaks v1, Challenges, and Streaks v2 all show the same pattern: O/T segments see 3-10x the engagement lift vs F/L. Most consistent and replicable finding. [006, 007, 008, 025]
+
+- **Post-challenge/streak behavior persists.** Users don't revert — O/T users maintain elevated DV7 after streaks end and PV lift persists after challenge windows close. [006, 008]
+
+- **Android and iOS respond differently to the same experiments.** Animations lift Android downloads but are flat on iOS [063]. Android notification experiments GA more readily [046, 047, 039]. Tidy Inbox works broadly on iOS but only for Fanatics on Android [037]. There's no single "Android vs iOS" story. [037, 039, 046, 047, 063]
+
+- **Notification quality beats quantity.** Important email filtering: +166K DAU [033]. Sender identity: +106K [036]. Inbox refresh upsell (high frequency): terminated with DV decrease [059]. [033, 036, 059]
 
 ### Medium Confidence
-- **Reducing friction doesn't always drive topline growth.** Auto subject lines and infinite scroll both improved the user experience without moving DV or revenue. Better UX ≠ more engagement. [003, 014]
-- **Bulk delete is the strongest user value proposition.** Consistently the winning message in IMAP-Out Rescue, ad creatives, and direct feature usage (+9X actions with Cleanup Buddy). [005]
-- **Performance optimization is a growth lever, not just tech debt.** Lottie animations delivered double-digit download lifts in emerging markets where device variability is high. [017]
-- **Exit intent is the best moment for notification opt-in.** +0.58pp vs +0.22-0.53pp for other moments. Users leaving are most receptive to "stay connected." [016]
-- **SMS is a cheap, positive-ROI reactivation channel.** $201 investment, $498 return, ROI-positive by Day 2. Platform shift from mobile web to iOS app over 45 days. [015]
+
+- **Desktop can deliver at massive scale with the right channel** despite ~10x lower monetization [026]. Web notifications: +267K DAU [031]. But desktop features require active entry points — Gamepad failed at 1.35% discovery [004]. [004, 026, 031]
+
+- **The notification opt-in upsell hierarchy is clear.** Message read (+0.74%) > exit intent (+0.35%) > inbox refresh (terminated). Effectiveness correlates with contextual relevance and inversely with frequency. [045, 050, 059]
+
+- **Reducing friction doesn't always drive topline growth.** Works in IMAP-Out (remove "Maybe Later": +16% [018]) but not in engagement (auto subject lines [003], infinite scroll [014]). Friction removal works when blocking high-intent actions. [003, 014, 018]
+
+- **Email reactivation campaigns show promise but haven't been scaled.** User resurrection: +113K DAU (paused [035]). Win-back: +19K DAU (terminated [043]). SMS is ROI-positive by Day 2 at $0.003/message [015]. [015, 035, 043]
+
+- **INTL markets have significant notification headroom.** iOS INTL persistent upsell: +20K DAU [042]. Android INTL lapsed returner: +4.7K DAU + $63/day [049]. Non-EN importance filter turnoff: +29K DAU [040]. [040, 042, 049]
 
 ### Emerging / Directional
-- **Desktop features need active entry points.** Gamepad failed at 1.35% discovery. Desktop lacks push notifications as a re-engagement mechanism. [004]
-- **Low-effort browser-level changes can move metrics.** Favicon update: +2.2% PVs with minimal dev effort. [023]
-- **New user funnels are heterogeneous.** Gmail SIWG users vs new YMail users have different needs but weren't previously differentiated. [021]
+
+- **Tidy Inbox may be hitting diminishing returns on iOS.** 1.5 delivered +96.5K DAU but 1.6 showed zero lift [037, 064]. Cleanup Buddy coupling may be the next iteration. [058, 064]
+- **Low-effort browser-level changes can move metrics.** Favicon update: +2.2% PVs, $3,398/day [023]
+- **Landshark animations create an acquisition/revenue tension** — +18-19% downloads but paused for revenue impact [057]
 
 ---
 
 ## Contradictions & Open Questions
 
+### Contradiction: Android vs iOS Experiment Success
+- **Android experiments GA more readily**: nudges [046], lapsed returner [047], persistent reminder [048], actions on notifications [039]
+- **iOS sometimes delivers larger absolute impact**: notification redesign with sender +106K [036], Tidy Inbox 1.5 +96.5K [037]
+- **Hypothesis:** Android's notification system is more permissive and users more responsive to iterative experiments. iOS has a higher bar (Apple permission system) but a larger addressable impact when cleared. Best practice: test on Android for faster signal, then iterate for iOS.
+
 ### Contradiction: Friction Reduction Impact
-- **Removing "Maybe Later" increased downloads by 16%** [018] — removing a choice reduced friction and helped.
-- **Auto Subject Lines had no engagement impact** [003] and **Infinite Scroll had no topline impact** [014] — removing friction didn't help.
-- **Hypothesis for why:** The distinction is whether the friction is blocking a high-intent action (downloading an app you were prompted to get) vs. creating a low-friction path for an optional action (adding a subject line, scrolling to the next email). Friction removal works when users already want to act but are being impeded; it doesn't work when the underlying motivation is absent.
+- **Removing "Maybe Later" increased downloads by 16%** [018]
+- **Auto Subject Lines had no engagement impact** [003] and **Infinite Scroll had no topline impact** [014]
+- **Hypothesis:** Friction removal works when users already want to act but are being impeded (high-intent); it doesn't work when the underlying motivation is absent.
 
 ### Contradiction: O&O vs IMAP-Out-Only Logout Yield
 - **IMAP-Out-Only:** 6% yield, sustained [012]
 - **O&O + IMAP-Out:** 2.5% steady-state, significant leakage [013]
-- **Hypothesis for why:** O&O users already have first-party access to Yahoo Mail. The logout is less disruptive — they have alternatives. IMAP-Out-Only users have no alternative, making the download compelling.
+- **Hypothesis:** O&O users have first-party alternatives; the logout is less disruptive for them.
+
+### Contradiction: Notification Upsell Frequency
+- **Exit intent works** (+9,828 PVs/day [045]) and **message read works** (+57% notif opened [050])
+- **Inbox refresh upsell failed** — DV decrease, user complaints [059]
+- **Hypothesis:** Upsell timing must match user intent, not just user presence. Once-per-session at meaningful moments (leaving, reading) is helpful; repeated during active use is intrusive.
+
+### Contradiction: Tidy Inbox Platform Response
+- **iOS Tidy Inbox 1.5: +96.5K DAU** (broad engagement) [037]
+- **Android Tidy Inbox 1.5: only worked for Fanatics** [037]
+- **Hypothesis:** iOS and Android users may have different email management habits, or the UX surfacing differs between platforms.
 
 ### Open Questions
-1. **Will gamification impact plateau?** Streaks v1 → v2 → Challenges show consistent signal, but will users habituate and stop responding over time? The evergreen program (xPlatform Streaks) will be the test.
-2. **What is the re-logout yield?** The 40M+ pool of previously-logged-out IMAP-Out users is being tapped, but steady-state yield for 2nd logouts is listed as "Unknown."
-3. **Can SMS be automated at scale?** Legal/privacy compliance for automated transactional SMS is unresolved. If solved, this could become a significant automated reactivation channel.
-4. **What drives the Android vs iOS retention gap?** D30 retention is 17% (Android) vs 11% (iOS) for IMAP-Out Rescue users. Root cause unclear — could be onboarding, user demographics, or platform behavior.
-5. **Will relaxing challenge eligibility to 5+ emails deliver?** Hypothesis is strong (O/T users benefit most and have fewer emails) but hasn't been measured in production.
+1. **Will gamification impact plateau?** The evergreen xPlatform Streaks program (2H'26) will test this.
+2. **What is the combined incremental DAU across all GA'd experiments?** Individual experiment DAUs may not be additive — need a holdback study.
+3. **Can SMS be automated at scale?** Legal/privacy compliance is the blocker.
+4. **Why were email campaigns (113K DAU, 19K DAU) not scaled?** Sustainability, retention, or cost concerns?
+5. **What's the re-logout yield for the 40M+ previously logged-out users?**
+6. **Can the importance classifier be retrained for non-EN languages?** [040]
+7. **When will the service worker bug be fixed?** Two desktop notification experiments impacted [001, 060].
 
 ---
 
 ## Opportunity Areas
 
-### 1. Notification Expansion (Desktop → Mobile → Cross-Platform)
-Sticky notifications delivered +4,300 DAU on Windows alone. MacOS expansion expected to double this. 81% of users haven't opted in. Exit intent upsell is the best moment. There's a large, underexploited channel here. [001, 016, 026]
+### 1. Notification Opt-In Waterfall (Desktop)
+Layer the best-performing upsell moments in sequence: onboarding → message read → exit intent. Each captures a different user segment at a different intent level. 81% of users haven't opted in — this is the bottleneck. [016, 045, 050, 053]
 
-### 2. IMAP-Out Rescue Retention
-Downloads are solved (24K+/day). Retention is the next frontier. D30 retention is 11-17% — a 1-2% improvement = +35K DAU. Onboarding experiments are underway. The volume makes even small retention gains massive. [027, 017, 018, 020]
+### 2. IMAP-Out Retention
+Downloads are solved (24K+/day). D30 retention of 11-17% means a 1-2% improvement = +35K DAU. Onboarding with Tidy Inbox is being tested. The volume makes even small retention gains massive. [027, 038]
 
-### 3. Gamification Evergreen Program
-Three experiments (Streaks v1, v2, Challenges) all confirm the thesis. O/T users respond dramatically. Post-treatment effects persist. The xPlatform Streaks program (2H'26) is the natural next step — making this permanent rather than experimental. [006, 007, 008, 025, 030]
+### 3. INTL Notification Expansion
+Non-EN users respond strongly to notification experiments when properly targeted: +29K DAU from turning off English-trained ML filter [040], +20K DAU from persistent upsell [042], +4.7K DAU + $63/day from lapsed returner [049]. INTL is an underinvested surface. [040, 042, 049]
 
-### 4. Challenge Funnel Optimization
-50% of users who hit Milestone 1 complete the full challenge. Getting more users to Milestone 1 is the highest-leverage optimization. Delaying opt-out (98% are Day 0) and relaxing eligibility (from 30+ to 5+ emails) are the two obvious levers. [009, 010, 011]
+### 4. Gamification Evergreen Program
+Three experiments (Streaks v1, v2, Challenges) all confirm the thesis. O/T users respond dramatically. Post-treatment effects persist. xPlatform Streaks (2H'26) is the natural next step. [006, 007, 008, 025, 030]
 
-### 5. SMS Automation
-Proven positive ROI at $0.003/message. Currently manual batch sends. Automating the campaign (Database → Evaluate → Telesign) would scale this channel. Legal approval for automated sends is the blocker. [015]
+### 5. MacOS Desktop Notification Expansion
+Sticky notifications and reactivation notifications are Windows-only today. MacOS expansion should roughly double the addressable population and impact. Two experiments await the service worker bug fix. [001, 044, 060]
 
-### 6. Desktop Engagement Surface Innovation
-Desktop monetizes at ~10x less than mobile, but the user base is large. Favicon update (+2.2% PVs) shows low-effort browser-level changes can move metrics. Gamepad failed because of discoverability, not concept. Finding active entry points for desktop features is the challenge. [004, 023, 026]
+### 6. Challenge Funnel Optimization
+50% of users who hit Milestone 1 complete the full challenge. Getting more users to Milestone 1 is the highest-leverage optimization. Delaying opt-out and relaxing eligibility are the two obvious levers. [009, 010, 011]
+
+### 7. Android Creative Optimization Playbook
+Animations consistently lift Android downloads (Lottie +5.7% [017], Gmail +6.4% [063], DbS +18-19% [057]) while being flat on iOS. This is a repeatable playbook: test creative variants, measure platform-specific impact, GA for Android even if iOS is flat. [017, 057, 063]
+
+### 8. SMS Automation
+Proven positive ROI at $0.003/message with natural mobile web → app migration. Currently manual. Automating the campaign would scale this channel. Legal approval for automated sends is the blocker. [015]
