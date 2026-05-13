@@ -74,3 +74,13 @@
 | 068 | DAU Composition Model | 2026-05-13 | strategic-context, dau-model, retention | 95% of DAU is continuing users; growth = retention game |
 | 069 | Onboarding Structurally Constrained | 2026-05-13 | new-users, onboarding, strategic-context | D7 12%, D90 7%; impact/infra/data triple constraint |
 | 070 | IMAP-Out Rescue Aggregate: 8.6M Downloads, 1.3M DAU | 2026-05-13 | imap-out-rescue, strategic-context | Program-level 2025 metrics; pacing to 10M+ in 2026 |
+| 071 | Email Sends Per DAU Declining YoY | 2026-05-13 | engagement-features, writing, strategic-context | (engagement-measured) Macro trend: sends declining across all platforms, desktop worst |
+| 072 | Emoji Reactions Android | 2026-05-13 | engagement-features, writing, mobile | (engagement-measured) +2.97% replies lift, ~20K DAU est; lightweight response mechanisms work |
+| 073 | Floating Compose Android — Failed | 2026-05-13 | engagement-features, writing, failed-experiment | (engagement-measured) No lift; compose discoverability not the bottleneck |
+| 074 | Action Required Emails iOS | 2026-05-13 | engagement-features, reading, mobile | (engagement-measured) +14% opens, +22% CTR (orange); primary metric not yet sig |
+| 075 | Kamino Filters Pre-Search iOS | 2026-05-13 | engagement-features, search, mobile | (engagement-measured) +0.24% search success, -4.4% empty results |
+| 076 | Email Suggestions Baseline iOS | 2026-05-13 | engagement-features, search, mobile | (engagement-measured) Removing suggestions = -2.76% search success; expanding to Android |
+| 077 | Quick Replies Android | 2026-05-13 | engagement-features, writing, mobile | (engagement-measured) +3.5% replies lift; GA'd |
+| 078 | Message Read Toolbar Android | 2026-05-13 | engagement-features, writing, mobile | (engagement-measured) +1.8% replies lift; pure UX improvement |
+| 079 | Contact Search Filtering Desktop | 2026-05-13 | engagement-features, search, desktop | +10K DAU from search filtering; one of few RWS experiments with direct DAU impact |
+| 080 | Message Read 2.5 Affiliate Revenue | 2026-05-13 | engagement-features, reading, monetization | +58.8% affiliate revenue, +95.29% affiliate clicks; reading + revenue synergy |

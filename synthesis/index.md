@@ -2,18 +2,18 @@
 
 > This is a living document. It is rebuilt each time a new learning is added.
 > Last updated: 2026-05-13
-> Total learnings incorporated: 70
+> Total learnings incorporated: 80 (70 dau/revenue-measured, 10 engagement-measured)
 
 ## Themes
 
 1. **[Notifications](notifications.md)** — 22 learnings (split into [Mobile](notifications-mobile.md) + [Desktop](notifications-desktop.md))
 2. **[IMAP-Out Rescue & Acquisition](imap-out-rescue.md)** — 15 learnings
 3. **[Gamification & Engagement (Streaks/Challenges)](gamification-engagement.md)** — 13 learnings
-4. **[Engagement Features (Tidy Inbox, Default Mail, Sharing)](engagement-features.md)** — 7 learnings
+4. **[Engagement Features (Tidy Inbox, Default Mail, Sharing, Read/Write/Search)](engagement-features.md)** — 17 learnings (7 dau/revenue + 10 engagement-measured)
 5. **[Reactivation & Dormant Users](reactivation.md)** — 6 learnings
-6. **[Desktop vs Mobile Platform Dynamics](platform-dynamics.md)** — 9 learnings (cross-cutting)
+6. **[Desktop vs Mobile Platform Dynamics](platform-dynamics.md)** — 15 learnings (cross-cutting)
 7. **[New Users & Activation](new-users.md)** — 5 learnings
-8. **[Strategic Context (DAU Model, Program Aggregates)](strategic-context.md)** — 2 learnings
+8. **[Strategic Context (DAU Model, Program Aggregates, Macro Trends)](strategic-context.md)** — 3 learnings
 
 ---
 
@@ -37,6 +37,10 @@
 
 - **Notification quality beats quantity.** Important email filtering: +166K DAU [033]. Sender identity: +106K [036]. Inbox refresh upsell (high frequency): terminated with DV decrease [059]. [033, 036, 059]
 
+- **Lightweight reply mechanisms consistently drive Android engagement — and they compound.** Quick Replies: +3.5% [077 (engagement-measured)]. Emoji Reactions: +2.97% [072 (engagement-measured)]. Message Read Toolbar: +1.8% [078 (engagement-measured)]. All three GA'd or approved. **No cannibalization between them** — emoji reactions don't reduce toolbar replies or quick replies [072]. Users want faster, lower-effort ways to respond — not better compose discoverability (Floating Compose FAB got +1% CTR but control had highest compose-to-send conversion [073 (engagement-measured)]). [072, 073, 077, 078]
+
+- **Search improvements compound — and hit the goal.** Kamino Filters: +0.24% success, -4.4% empty results [075 (engagement-measured)]. Email Suggestions: -2.76% when removed [076 (engagement-measured)]. Contact Filtering: +10K DAU [079]. Guided/structured search consistently outperforms free-text. **Mobile search hit 101% of goal** (62.62% vs 62% target) by November 2024. Transaction email lookup (Purchases/Receipts) is the #1 search use case [075, 076]. [075, 076, 079]
+
 ### Medium Confidence
 
 - **Desktop can deliver at massive scale with the right channel** despite ~10x lower monetization [026]. Web notifications: +267K DAU [031]. But desktop features require active entry points — Gamepad failed at 1.35% discovery [004]. [004, 026, 031]
@@ -49,26 +53,30 @@
 
 - **INTL markets have significant notification headroom.** iOS INTL persistent upsell: +20K DAU [042]. Android INTL lapsed returner: +4.7K DAU + $63/day [049]. Non-EN importance filter turnoff: +29K DAU [040]. [040, 042, 049]
 
+- **Reading improvements can serve both engagement and revenue.** Message Read 2.5 delivered +58.8% affiliate revenue and +95.29% affiliate clicks [080]. Action Required Emails lifted opens +14% and CTR +22% [074 (engagement-measured)]. Better presentation of what matters helps users and the business. [074, 080]
+
 ### Emerging / Directional
 
 - **Tidy Inbox may be hitting diminishing returns on iOS.** 1.5 delivered +96.5K DAU but 1.6 showed zero lift [037, 064]. Cleanup Buddy coupling may be the next iteration. [058, 064]
 - **Low-effort browser-level changes can move metrics.** Favicon update: +2.2% PVs, $3,398/day [023]
 - **Landshark animations create an acquisition/revenue tension** — +18-19% downloads but paused for revenue impact [057]
 - **New user onboarding experiments consistently fail.** Newsletters: 0.3% signup [066]. Add a mailbox: 0.2% conversion [067]. Structural constraints (small funnel, broken infra, no data) make this area hostile to experimentation [069]
+- **Email sends per DAU declining YoY across all platforms** (Android -2.9%, iOS -8.9%, Desktop -14.6% [071 (engagement-measured)]). Occasional users hardest hit (iOS -14.76%, Android -10.24%). Desktop decline partially explained by April instrumentation change (-7% to -12%). Cannot determine if macro or O&O-specific. Team acknowledges "Quick Replies gains may not overtake send pattern loss." This is the strongest headwind for the RWS Squad's Write goals.
 
 ---
 
 ## Contradictions & Open Questions
 
 ### Contradiction: Android vs iOS Experiment Success
-- **Android experiments GA more readily**: nudges [046], lapsed returner [047], persistent reminder [048], actions on notifications [039]
+- **Android experiments GA more readily**: nudges [046], lapsed returner [047], persistent reminder [048], actions on notifications [039], Quick Replies [077], Emoji Reactions [072]
 - **iOS sometimes delivers larger absolute impact**: notification redesign with sender +106K [036], Tidy Inbox 1.5 +96.5K [037]
 - **Hypothesis:** Android's notification system is more permissive and users more responsive to iterative experiments. iOS has a higher bar (Apple permission system) but a larger addressable impact when cleared. Best practice: test on Android for faster signal, then iterate for iOS.
 
 ### Contradiction: Friction Reduction Impact
 - **Removing "Maybe Later" increased downloads by 16%** [018]
 - **Auto Subject Lines had no engagement impact** [003] and **Infinite Scroll had no topline impact** [014]
-- **Hypothesis:** Friction removal works when users already want to act but are being impeded (high-intent); it doesn't work when the underlying motivation is absent.
+- **Floating Compose got +1% CTR but control had highest compose-to-send conversion** [073 (engagement-measured)]
+- **Hypothesis:** Friction removal works when users already want to act but are being impeded (high-intent); it doesn't work when the underlying motivation is absent. Compose discoverability confirms this — users aren't failing to find compose, they're failing to complete it.
 
 ### Contradiction: O&O vs IMAP-Out-Only Logout Yield
 - **IMAP-Out-Only:** 6% yield, sustained [012]
@@ -85,6 +93,11 @@
 - **Android Tidy Inbox 1.5: only worked for Fanatics** [037]
 - **Hypothesis:** iOS and Android users may have different email management habits, or the UX surfacing differs between platforms.
 
+### Contradiction: Feature-Level Wins vs Macro Metric Decline
+- **Three Android writing experiments all lifted replies** [072, 077, 078 (all engagement-measured)]
+- **Sends per DAU declining YoY across all platforms** [071 (engagement-measured)]
+- **Hypothesis:** Feature-level engagement metrics (replies per user in experiment) and platform-level metrics (sends per DAU across all users) measure different things. The macro decline may reflect changing user composition or industry trends that overpower individual feature gains. Alternatively, "replies" and "sends" may not be the same behavior.
+
 ### Open Questions
 1. **Will gamification impact plateau?** The evergreen xPlatform Streaks program (2H'26) will test this.
 2. **What is the combined incremental DAU across all GA'd experiments?** Individual experiment DAUs may not be additive — need a holdback study.
@@ -93,6 +106,9 @@
 5. **What's the re-logout yield for the 40M+ previously logged-out users?**
 6. **Can the importance classifier be retrained for non-EN languages?** [040]
 7. **When will the service worker bug be fixed?** Two desktop notification experiments impacted [001, 060].
+8. **Is the sends-per-DAU decline macro or O&O-specific?** IMAP-Out send data would answer this but isn't available.
+9. **Do the Android writing wins (Quick Replies, Emoji Reactions) replicate on iOS?** iOS experiments in pipeline.
+10. **Can the RWS Squad's engagement lifts be connected to DAU impact?** Only Contact Search Filtering [079] has a direct DAU measurement.
 
 ---
 
@@ -124,3 +140,9 @@ Proven positive ROI at $0.003/message with natural mobile web → app migration.
 
 ### 9. Seasonal Challenge Cadence
 Summer ($127K) and Haunted ($143K) both generated incremental revenue with different behavioral signatures. A regular cadence of themed challenges could become a predictable revenue stream and Mail+ cross-sell channel (40% more Mail+ CTA clicks). [008, 065]
+
+### 10. Cross-Platform Reply Mechanism Expansion
+Three Android lightweight reply features all work (Quick Replies +3.5% [077], Emoji Reactions +2.97% [072], Toolbar +1.8% [078] — all engagement-measured). iOS versions of Quick Replies and Emoji Reactions are in pipeline. If iOS replicates, this becomes a high-confidence engagement pattern across platforms. The compounding question: are these additive or substitutive when all live simultaneously? [072, 077, 078]
+
+### 11. Search Suggestion Expansion to Android
+Email Suggestions baseline validated on iOS (-2.76% when removed [076 (engagement-measured)]). Android doesn't have this feature yet. If the iOS lift transfers, this is one of the simplest wins for the RWS Squad's mobile search success rate goal (currently at 99% of target). [076]
