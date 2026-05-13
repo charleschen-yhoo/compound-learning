@@ -68,3 +68,9 @@
 | 062 | Web Notification Action Buttons (Desktop) | 2026-05-13 | notifications, desktop, ux-patterns | Mirrors rich notif results; Chrome/Edge only |
 | 063 | IMAP-Out Animation Gmail Platform Split | 2026-05-13 | imap-out-rescue, creative, platform-dynamics | Flat iOS, +6.4% Android; animations work better on Android |
 | 064 | Tidy Inbox 1.6 (iOS) — No DV Lift | 2026-05-13 | engagement, tidy-inbox, failed-experiment | Zero lift after 1.5's 96.5K; possible saturation |
+| 065 | Haunted Inbox Challenge | 2026-05-13 | engagement, gamification, challenges, revenue | $143K revenue; drove deletes (+6.19%) vs Summer's broad engagement |
+| 066 | Newsletter Subscription — Failed | 2026-05-13 | new-users, onboarding, failed-experiment | 0.3% signup; users perceived it as Yahoo ad |
+| 067 | Add a Mailbox Upsell — Failed | 2026-05-13 | new-users, onboarding, failed-experiment | 0.2% conversion; TOI nudge can't overcome high-effort action |
+| 068 | DAU Composition Model | 2026-05-13 | strategic-context, dau-model, retention | 95% of DAU is continuing users; growth = retention game |
+| 069 | Onboarding Structurally Constrained | 2026-05-13 | new-users, onboarding, strategic-context | D7 12%, D90 7%; impact/infra/data triple constraint |
+| 070 | IMAP-Out Rescue Aggregate: 8.6M Downloads, 1.3M DAU | 2026-05-13 | imap-out-rescue, strategic-context | Program-level 2025 metrics; pacing to 10M+ in 2026 |

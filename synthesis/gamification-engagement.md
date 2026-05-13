@@ -37,8 +37,10 @@ The team systematically validated that gamification mechanics — streaks, chall
 ## Opportunity Areas
 - **Challenge funnel optimization**: Delay opt-out popup and relax eligibility to unlock more O/T users [009, 010]
 - **Milestone 1 acceleration**: Whatever gets users to the first milestone converts 50% to completion [011]
-- **Seasonal challenges as revenue events**: Summer and Haunted challenges both generated incremental revenue. A cadence of seasonal challenges could be a recurring revenue lever [008]
+- **Seasonal challenges as a recurring revenue lever**: Summer ($127K), Haunted ($143K), and future seasonal challenges generate incremental revenue. Haunted outperformed Summer on PV (+2.70% vs +2.03%), DV (+1.93% vs +0.69%), and revenue (+1.63% vs +1.24%). A regular cadence could become a predictable revenue stream. [008, 065]
+- **Theme-specific challenge design**: Different themes drive different behaviors — Haunted drove deletes (+6.19%), Summer drove broad engagement. Themes can be designed to target specific behavioral goals. [008, 065]
+- **Mail+ revenue synergy**: Challenges drove 40% more clicks to Mail+ CTA vs control — an unexpected cross-sell opportunity. [065]
 - **Cleanup Buddy discoverability**: Bulk delete is the strongest value prop [005] but lost visibility in Orbit migration. Finding a persistent home could amplify engagement.
 
 ## Related Learnings
-[003, 004, 005, 006, 007, 008, 009, 010, 011, 024, 025, 030]
+[003, 004, 005, 006, 007, 008, 009, 010, 011, 024, 025, 030, 065]

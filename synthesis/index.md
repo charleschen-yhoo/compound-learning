@@ -2,17 +2,18 @@
 
 > This is a living document. It is rebuilt each time a new learning is added.
 > Last updated: 2026-05-13
-> Total learnings incorporated: 64
+> Total learnings incorporated: 70
 
 ## Themes
 
 1. **[Notifications](notifications.md)** — 22 learnings (split into [Mobile](notifications-mobile.md) + [Desktop](notifications-desktop.md))
 2. **[IMAP-Out Rescue & Acquisition](imap-out-rescue.md)** — 15 learnings
-3. **[Gamification & Engagement (Streaks/Challenges)](gamification-engagement.md)** — 12 learnings
+3. **[Gamification & Engagement (Streaks/Challenges)](gamification-engagement.md)** — 13 learnings
 4. **[Engagement Features (Tidy Inbox, Default Mail, Sharing)](engagement-features.md)** — 7 learnings
 5. **[Reactivation & Dormant Users](reactivation.md)** — 6 learnings
 6. **[Desktop vs Mobile Platform Dynamics](platform-dynamics.md)** — 9 learnings (cross-cutting)
-7. **[New Users & Activation](new-users.md)** — 1 learning
+7. **[New Users & Activation](new-users.md)** — 5 learnings
+8. **[Strategic Context (DAU Model, Program Aggregates)](strategic-context.md)** — 2 learnings
 
 ---
 
@@ -27,6 +28,10 @@
 - **Gamification disproportionately impacts less-active users.** Streaks v1, Challenges, and Streaks v2 all show the same pattern: O/T segments see 3-10x the engagement lift vs F/L. Most consistent and replicable finding. [006, 007, 008, 025]
 
 - **Post-challenge/streak behavior persists.** Users don't revert — O/T users maintain elevated DV7 after streaks end and PV lift persists after challenge windows close. [006, 008]
+
+- **DAU growth is a retention game, not an acquisition game.** 95% of DAU is continuing users (55M). New accounts = 0.1% (57K). Even doubling new user D90 retention = only 200K DAU. The math favors engagement/retention investments over onboarding. [068, 069]
+
+- **Seasonal challenges are a repeatable revenue lever.** Summer: $127K, +1.24% ad revenue [008]. Haunted: $143K, +1.63% ad revenue, +6.19% deletes [065]. Different themes drive different behaviors — Haunted gamified cleanup, Summer drove broad engagement. Challenges also drive 40% more Mail+ CTA clicks. [008, 065]
 
 - **Android and iOS respond differently to the same experiments.** Animations lift Android downloads but are flat on iOS [063]. Android notification experiments GA more readily [046, 047, 039]. Tidy Inbox works broadly on iOS but only for Fanatics on Android [037]. There's no single "Android vs iOS" story. [037, 039, 046, 047, 063]
 
@@ -49,6 +54,7 @@
 - **Tidy Inbox may be hitting diminishing returns on iOS.** 1.5 delivered +96.5K DAU but 1.6 showed zero lift [037, 064]. Cleanup Buddy coupling may be the next iteration. [058, 064]
 - **Low-effort browser-level changes can move metrics.** Favicon update: +2.2% PVs, $3,398/day [023]
 - **Landshark animations create an acquisition/revenue tension** — +18-19% downloads but paused for revenue impact [057]
+- **New user onboarding experiments consistently fail.** Newsletters: 0.3% signup [066]. Add a mailbox: 0.2% conversion [067]. Structural constraints (small funnel, broken infra, no data) make this area hostile to experimentation [069]
 
 ---
 
@@ -115,3 +121,6 @@ Animations consistently lift Android downloads (Lottie +5.7% [017], Gmail +6.4% 
 
 ### 8. SMS Automation
 Proven positive ROI at $0.003/message with natural mobile web → app migration. Currently manual. Automating the campaign would scale this channel. Legal approval for automated sends is the blocker. [015]
+
+### 9. Seasonal Challenge Cadence
+Summer ($127K) and Haunted ($143K) both generated incremental revenue with different behavioral signatures. A regular cadence of themed challenges could become a predictable revenue stream and Mail+ cross-sell channel (40% more Mail+ CTA clicks). [008, 065]
