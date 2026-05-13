@@ -5,6 +5,7 @@ date: 2024-08-14
 source: "Experiment Sheet — Email Sharing Redo (iOS)"
 themes: [engagement, sharing, mobile]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

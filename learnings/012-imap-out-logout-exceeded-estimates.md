@@ -5,6 +5,7 @@ date: 2026-01-22
 source: "UG Squad MPU - January 2026"
 themes: [imap-out, logout, acquisition, compounding]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

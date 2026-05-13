@@ -5,6 +5,7 @@ date: 2025-09-26
 source: "UG Squad MPU - September 2025"
 themes: [notifications, desktop, opt-in, upsells]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

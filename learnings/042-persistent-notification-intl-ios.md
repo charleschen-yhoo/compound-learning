@@ -5,6 +5,7 @@ date: 2025-11-07
 source: "Experiment Sheet — Persistent Notification Upsell for INTL users (iOS)"
 themes: [notifications, mobile, internationalization, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

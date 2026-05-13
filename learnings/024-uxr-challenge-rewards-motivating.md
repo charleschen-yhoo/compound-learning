@@ -5,6 +5,7 @@ date: 2025-09-26
 source: "UG Squad MPU - September 2025"
 themes: [engagement, challenges, uxr, rewards, qualitative]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

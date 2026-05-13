@@ -5,6 +5,7 @@ date: 2026-04-23
 source: "UG Squad MPU - April 2026"
 themes: [monetization, desktop, mobile, platform-strategy]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

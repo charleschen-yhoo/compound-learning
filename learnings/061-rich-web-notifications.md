@@ -5,6 +5,7 @@ date: 2025-09-01
 source: "Experiment Sheet — Web Notifications - Rich Notifications (Norrin, Oasis); AIDE-6533"
 themes: [notifications, desktop, engagement, ux-patterns]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

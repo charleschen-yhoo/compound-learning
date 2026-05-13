@@ -5,6 +5,7 @@ date: 2025-09-12
 source: "Experiment Sheet — Web Notification Upsells - notifReadUpsell re-run (Oasis); AIDE-6568"
 themes: [notifications, desktop, opt-in, upsells]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: YYYY-MM-DD
 source: ""
 themes: []
 confidence: high | medium | low
+goal: "dau/revenue" | "engagement"
 ---
 
 ## Hypothesis

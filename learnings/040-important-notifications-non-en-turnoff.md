@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Important Notifications: Turn off for non-EN Users (Android)"
 themes: [notifications, mobile, internationalization, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

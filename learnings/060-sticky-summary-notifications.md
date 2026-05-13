@@ -5,6 +5,7 @@ date: 2025-09-29
 source: "Experiment Sheet — Web Notifications - Sticky Summary Notifications (Norrin, Oasis); AIDE-6685"
 themes: [notifications, desktop, engagement]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

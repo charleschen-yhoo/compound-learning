@@ -5,6 +5,7 @@ date: 2025-04-01
 source: "Experiment Sheet — Nudges for Notification Opt-In v2 Rerun (Android)"
 themes: [notifications, mobile, opt-in, nudges]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

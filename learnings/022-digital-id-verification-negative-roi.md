@@ -5,6 +5,7 @@ date: 2025-07-10
 source: "UG Squad MPU - July/September 2025 Squad Charters"
 themes: [account-recovery, verification, failed-experiment]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

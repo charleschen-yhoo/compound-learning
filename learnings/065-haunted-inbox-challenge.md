@@ -5,6 +5,7 @@ date: 2025-11-03
 source: "YMail User Growth Team Cross-BU Presentation (3.6.2026), p16"
 themes: [engagement, gamification, challenges, desktop, revenue]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

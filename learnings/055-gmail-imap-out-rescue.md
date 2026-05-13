@@ -5,6 +5,7 @@ date: 2025-01-05
 source: "Experiment Sheet — Gmail IMAP-Out Rescue (Identity, Android + iOS)"
 themes: [imap-out-rescue, acquisition, gmail]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

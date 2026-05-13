@@ -5,6 +5,7 @@ date: 2026-01-01
 source: "YMail User Growth Team Cross-BU Presentation (3.6.2026), p25"
 themes: [new-users, onboarding, imap-in, failed-experiment]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

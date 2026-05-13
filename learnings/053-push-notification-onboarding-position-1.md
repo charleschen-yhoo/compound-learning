@@ -5,6 +5,7 @@ date: 2024-08-14
 source: "Experiment Sheet — Move Push Notification Onboarding to Position 1 Redo - bcookie (iOS)"
 themes: [notifications, mobile, onboarding, opt-in]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

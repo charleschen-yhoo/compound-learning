@@ -5,6 +5,7 @@ date: 2025-08-28
 source: "Experiment Sheet — Web Notification Upsells - Exit Intent (Oasis); AIDE-6532"
 themes: [notifications, desktop, opt-in, upsells]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

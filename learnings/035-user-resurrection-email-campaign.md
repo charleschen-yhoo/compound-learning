@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — User Resurrection Campaign (Email)"
 themes: [reactivation, email-campaigns, engagement]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

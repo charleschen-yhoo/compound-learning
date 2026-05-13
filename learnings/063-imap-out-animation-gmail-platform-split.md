@@ -5,6 +5,7 @@ date: 2025-05-02
 source: "Experiment Sheet — [IMAP-Out Rescue] Animation Optimizations on Gmail (Identity)"
 themes: [imap-out-rescue, acquisition, creative, platform-dynamics]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

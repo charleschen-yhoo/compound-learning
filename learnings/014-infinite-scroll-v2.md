@@ -5,6 +5,7 @@ date: 2026-01-22
 source: "UG Squad MPU - January 2026"
 themes: [engagement, desktop, reading-experience, ux]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

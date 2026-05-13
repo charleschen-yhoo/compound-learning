@@ -5,6 +5,7 @@ date: 2025-09-12
 source: "Experiment Sheet — Web Notifications - Reactivation Notifications (Norrin, Oasis); AIDE-6567"
 themes: [notifications, desktop, reactivation, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: 2025-11-10
 source: "Experiment Sheet — Cleanup Buddy (Smart Tidy Inbox) (iOS, Android)"
 themes: [engagement, triage, tidy-inbox, gamification]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

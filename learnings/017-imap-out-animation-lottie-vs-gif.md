@@ -5,6 +5,7 @@ date: 2025-04-24
 source: "UG Squad MPU - April 2025"
 themes: [imap-out-rescue, performance, acquisition, international]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

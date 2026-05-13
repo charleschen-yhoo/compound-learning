@@ -5,6 +5,7 @@ date: 2026-04-23
 source: "UG Squad MPU - April 2026"
 themes: [engagement, bulk-delete, mobile, triage]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: 2025-10-28
 source: "Experiment Sheet — Lapsed Returner Notification Upsell INTL (Android); AIDE-6828"
 themes: [notifications, mobile, internationalization, reactivation]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

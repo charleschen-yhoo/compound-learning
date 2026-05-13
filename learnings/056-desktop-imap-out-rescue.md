@@ -5,6 +5,7 @@ date: 2025-11-17
 source: "Experiment Sheet — Desktop IMAP-Out Rescue (Identity/Web)"
 themes: [imap-out-rescue, acquisition, desktop, platform-dynamics]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

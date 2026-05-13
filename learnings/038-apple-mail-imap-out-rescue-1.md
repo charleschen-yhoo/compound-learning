@@ -5,6 +5,7 @@ date: 2024-07-30
 source: "Experiment Sheet — Apple Mail IMAP-Out Rescue 1 (Identity)"
 themes: [imap-out-rescue, acquisition, mobile]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

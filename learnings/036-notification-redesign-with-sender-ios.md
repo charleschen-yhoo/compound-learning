@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Notification Redesign with Sender (iOS)"
 themes: [notifications, mobile, engagement, ux-patterns]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: 2025-05-15
 source: "Experiment Sheet — Lapsed Returner Notification Upsell Rerun (iOS, Android)"
 themes: [notifications, mobile, reactivation, opt-in]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

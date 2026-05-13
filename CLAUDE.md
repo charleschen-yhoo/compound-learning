@@ -74,6 +74,21 @@ When a user provides a PDF, deck export, or pasted slide content:
 4. Follow the standard parse → manifest → synthesis flow.
 5. For bulk (multiple learnings from one source), parse all first, synthesize once.
 
+## Goal Types
+
+Each learning has a `goal` field in its frontmatter:
+
+- **`goal: "dau/revenue"`** — Measured against DAU, revenue, or other business topline metrics. These are the primary evidence base for the synthesis.
+- **`goal: "engagement"`** — Measured against engagement metrics (time spent, actions taken, feature adoption, etc.) without a direct, measured link to DAU or revenue. The team believes more engagement → better retention → better DAU/revenue, but this chain is assumed, not proven.
+
+### How to handle engagement-goal learnings in synthesis
+
+- **Include them** in the same themes, findings, and contradiction analysis as dau/revenue learnings.
+- **Tag them clearly** when cited: append `(engagement-measured)` after the learning ID, e.g., `[075 (engagement-measured)]`.
+- **Do NOT count them** toward high-confidence DAU/revenue claims. An engagement-goal learning can strengthen a pattern ("users respond to X") but cannot on its own establish a DAU/revenue impact.
+- **Do count them** toward engagement-level confidence claims. If 3 engagement-goal learnings confirm a pattern, that pattern is high-confidence for engagement impact.
+- **Surface the gap** as an open question when engagement learnings suggest a promising pattern but no dau/revenue learning confirms the business impact.
+
 ## Synthesis Principles
 
 - Every claim in the synthesis must trace back to specific learning IDs

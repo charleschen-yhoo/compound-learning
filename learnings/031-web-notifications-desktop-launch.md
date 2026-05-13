@@ -5,6 +5,7 @@ date: 2024-09-02
 source: "Experiment Sheet — Web Notifications (Desktop, Norrin)"
 themes: [notifications, desktop, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

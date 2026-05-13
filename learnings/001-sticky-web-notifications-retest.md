@@ -5,6 +5,7 @@ date: 2026-04-23
 source: "UG Squad MPU - April 2026"
 themes: [notifications, desktop, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

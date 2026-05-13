@@ -5,6 +5,7 @@ date: 2025-07-10
 source: "UG Squad MPU - July 2025"
 themes: [imap-out-rescue, acquisition, creative, animation]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

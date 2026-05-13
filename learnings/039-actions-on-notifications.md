@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Actions on Notifications (Android), Actions on Notification Long Press (iOS)"
 themes: [notifications, mobile, engagement, ux-patterns]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

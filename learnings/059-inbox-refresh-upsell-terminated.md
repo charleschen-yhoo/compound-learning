@@ -5,6 +5,7 @@ date: 2025-10-01
 source: "Experiment Sheet — Web Notifications Upsells - Inbox Refresh Upsell (Oasis); AIDE-6686"
 themes: [notifications, desktop, opt-in, upsells, failed-experiment]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: 2025-09-03
 source: "Experiment Sheet — Web Notifications - Action Buttons (Norrin, Oasis); AIDE-6534"
 themes: [notifications, desktop, engagement, ux-patterns]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

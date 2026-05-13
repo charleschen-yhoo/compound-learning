@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Important Email Notifications (Android)"
 themes: [notifications, mobile, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

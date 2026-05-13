@@ -5,6 +5,7 @@ date: 2024-11-13
 source: "Experiment Sheet — Tidy Inbox 1.5 (iOS)"
 themes: [engagement, triage, mobile, tidy-inbox]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

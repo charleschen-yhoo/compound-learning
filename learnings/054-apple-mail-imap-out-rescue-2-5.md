@@ -5,6 +5,7 @@ date: 2025-01-15
 source: "Experiment Sheet — Apple Mail IMAP-Out Rescue 2.5 (Identity)"
 themes: [imap-out-rescue, acquisition, ux-patterns]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

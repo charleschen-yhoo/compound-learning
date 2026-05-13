@@ -5,6 +5,7 @@ date: 2025-07-10
 source: "UG Squad MPU - July 2025"
 themes: [account-recovery, failed-experiment]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

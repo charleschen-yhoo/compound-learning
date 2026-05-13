@@ -5,6 +5,7 @@ date: 2025-07-10
 source: "UG Squad MPU - July 2025"
 themes: [engagement, gamification, streaks, mobile, flaot-segmentation]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

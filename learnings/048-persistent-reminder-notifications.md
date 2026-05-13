@@ -5,6 +5,7 @@ date: 2025-06-05
 source: "Experiment Sheet — Persistent Reminder to Turn on Notifications (iOS Rerun, Android)"
 themes: [notifications, mobile, opt-in, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

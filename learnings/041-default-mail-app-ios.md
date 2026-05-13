@@ -5,6 +5,7 @@ date: 2024-11-25
 source: "Experiment Sheet — Default Mail App (iOS)"
 themes: [engagement, mobile, platform-dynamics]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

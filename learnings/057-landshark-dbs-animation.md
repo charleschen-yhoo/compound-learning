@@ -5,6 +5,7 @@ date: 2025-05-07
 source: "Experiment Sheet — [Landshark] DbS Animation (Mobile Web, Noble)"
 themes: [imap-out-rescue, acquisition, creative, revenue-tradeoff]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

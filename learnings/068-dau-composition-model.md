@@ -5,6 +5,7 @@ date: 2024-03-10
 source: "YMail User Growth Team Cross-BU Presentation (3.6.2026), p4-5"
 themes: [strategic-context, dau-model, user-lifecycle, retention]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

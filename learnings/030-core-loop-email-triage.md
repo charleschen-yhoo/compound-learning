@@ -5,6 +5,7 @@ date: 2025-04-24
 source: "UG Squad MPU - April 2025"
 themes: [engagement, core-loop, behavior-analysis, strategy]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

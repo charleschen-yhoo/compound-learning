@@ -5,6 +5,7 @@ date: 2025-04-24
 source: "UG Squad MPU - April 2025"
 themes: [engagement, sharing, acquisition, mobile]
 confidence: medium
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Inactivity Notifications: Cooldown from 7 to 5 days (Android)"
 themes: [notifications, mobile, engagement, reactivation]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

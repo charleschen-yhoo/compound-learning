@@ -5,6 +5,7 @@ date: 2024-10-01
 source: "Experiment Sheet — Inactivity Notifications: Network Optimizations (Android)"
 themes: [notifications, mobile, performance, engagement]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis

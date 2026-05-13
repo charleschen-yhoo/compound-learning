@@ -5,6 +5,7 @@ date: 2026-01-22
 source: "UG Squad MPU - January 2026"
 themes: [reactivation, sms, dormant-users, roi]
 confidence: high
+goal: "dau/revenue"
 ---
 
 ## Hypothesis
