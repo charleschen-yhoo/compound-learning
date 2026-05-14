@@ -98,6 +98,66 @@ Each learning has a `goal` field in its frontmatter:
 - The synthesis should be useful to someone who has never read any individual artifact
 - Keep synthesis concise — a PM should be able to read index.md in under 5 minutes
 
+## Vetting a Backlog Idea
+
+When a user says "vet this idea," "evaluate this," or provides a backlog item to assess:
+
+1. **Read the full corpus** — read `synthesis/index.md`, all `synthesis/{theme}.md` files, and scan all `learnings/` artifacts for relevant evidence.
+
+2. **Produce a structured scorecard:**
+
+   ### [Idea Title]
+
+   **Evidence For**
+   Learnings that support this idea. Cite IDs, quote the relevant finding, note confidence level. Tag engagement-measured learnings per goal type rules.
+
+   **Evidence Against**
+   Learnings that contradict this idea or suggest caution. Include failed experiments in adjacent areas.
+
+   **Comparable Experiments**
+   What's been tried that's similar — same surface, same mechanic, same user segment. What happened and why. This is the most important section: the team should never run an experiment that's been run before without knowing the prior result.
+
+   **Key Unknowns**
+   What the corpus doesn't cover that you'd need to believe for this idea to work. Flag whether the unknown is testable and how.
+
+   **Segment & Platform Considerations**
+   Does the evidence vary by iOS vs Android, desktop vs mobile, or FLAOT segment? Call out platform-specific patterns (e.g., Android experiments GA more readily, animations work better on Android, Occasional users respond differently than Fanatics).
+
+   **Verdict**
+   One of:
+   - **Strong evidence** — multiple independent learnings confirm this will likely work
+   - **Directional support** — some evidence in favor, no contradictions, but gaps remain
+   - **Mixed signals** — evidence both for and against; specify what would tip the balance
+   - **Evidence against** — prior experiments or patterns suggest this won't work
+   - **No data** — the corpus has nothing relevant; this is genuinely new territory
+
+   **Suggested Experiment Design** (if verdict is not "Evidence against")
+   Based on comparable experiments, suggest: platform to test first, metric to target, likely MDE, and what to watch for in guardrails.
+
+3. **Be honest about gaps.** A "no data" verdict is valuable — it tells the team they're in uncharted territory and should size the experiment conservatively.
+
+## Reviewing a Roadmap
+
+When a user provides a list of backlog items or a roadmap to review:
+
+1. **Vet each item** using the scorecard above (abbreviated — 2-3 bullets per section, not full paragraphs).
+
+2. **Rank by evidence strength:**
+   - Items with "Strong evidence" or "Directional support" → highlight as high-confidence bets
+   - Items with "Mixed signals" → flag the specific contradiction and what would resolve it
+   - Items with "Evidence against" → call out explicitly with the reason
+   - Items with "No data" → flag as exploratory bets that need conservative experiment sizing
+
+3. **Surface portfolio-level patterns:**
+   - Are there themes being over-invested or under-invested relative to the evidence?
+   - Are there high-confidence opportunities from the synthesis that aren't on the roadmap?
+   - Does the roadmap balance proven patterns (exploitation) with genuinely new bets (exploration)?
+
+4. **Output a summary table:**
+   | Idea | Verdict | Key Evidence | Biggest Risk |
+   |------|---------|--------------|--------------|
+   | ... | ... | ... | ... |
+
 ## Querying the System
 
 When a user asks a question against the learnings (e.g., "what do we know about onboarding?", "should we try X?"):
